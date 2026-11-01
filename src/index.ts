@@ -1,3 +1,10 @@
-import { buscarCotacaoDolar } from "./service/cotacao.service.js";
+import type { ScheduledEvent } from "aws-lambda"
+import { handler } from "./handler.js"
 
-console.log(await buscarCotacaoDolar())
+
+const test = {} as ScheduledEvent;
+
+await handler(test);
+
+
+
